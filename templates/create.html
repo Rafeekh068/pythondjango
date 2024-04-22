@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo html</title>
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            Title: <input type="text" name="Title" />
+            Year: <input type="text" name="Year" />
+            Summary: <input type="text" name="Summary" />
+        <button type="submit">create</button>
+        </form>
+        <h1><style></style>This is a demo file</h1>
+        <p>this is paragraph tag</p>
+        <h2>this is the second heading</h2><br>
+        <img scr="tiger.jpg" width="200" height="200" alt="tiger image">
+
+    </body>
+
+</html>
+
+{% endblock %}
